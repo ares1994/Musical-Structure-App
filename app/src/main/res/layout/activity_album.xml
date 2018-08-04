@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img_0056"
+    tools:context="com.example.android.aresplayer.AlbumActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/home_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:contentDescription="@string/album_art_view"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_home" />
+
+        <ImageButton
+            android:id="@+id/song_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/song_list_button"
+            android:src="@drawable/ic_music_player" />
+
+        <ImageButton
+            android:id="@+id/album_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/album_list_button"
+            android:src="@drawable/ic_cd" />
+
+        <ImageButton
+            android:id="@+id/artist_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/home_button"
+            android:src="@drawable/ic_icon" />
+    </LinearLayout>
+</LinearLayout>
