@@ -16,7 +16,7 @@ public class ArtistActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-        ImageButton homeButton = (ImageButton) findViewById(R.id.home_button);
+        ImageButton homeButton =  findViewById(R.id.home_button);
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -24,7 +24,7 @@ public class ArtistActivity extends AppCompatActivity {
                 startActivity(homeIntent);
             }
         });
-        ImageButton songButton = (ImageButton) findViewById(R.id.song_button);
+        ImageButton songButton =  findViewById(R.id.song_button);
         songButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,7 +32,7 @@ public class ArtistActivity extends AppCompatActivity {
                 startActivity(songIntent);
             }
         });
-        ImageButton albumButton = (ImageButton) findViewById(R.id.album_button);
+        ImageButton albumButton =  findViewById(R.id.album_button);
         albumButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,7 +41,7 @@ public class ArtistActivity extends AppCompatActivity {
             }
         });
 
-        ArrayList<String> info = new ArrayList<String>();
+        ArrayList<String> info = new ArrayList<>();
         info.add("Drake");
         info.add("G-Eazy");
         info.add("Joyner Lucas");
@@ -52,7 +52,7 @@ public class ArtistActivity extends AppCompatActivity {
 
 
         InfoAdapter adapter = new InfoAdapter(this, info);
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView listView =  findViewById(R.id.list);
         listView.setAdapter(adapter);
 
     }
