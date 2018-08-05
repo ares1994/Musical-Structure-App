@@ -40,7 +40,7 @@ public class SongActivity extends AppCompatActivity {
             }
         });
 
-        ArrayList<Word> info = new ArrayList<Word>();
+        ArrayList<Word> info = new ArrayList<>();
         info.add(new Word("Closer", "The Chainsmokers"));
         info.add(new Word("Everything will be OK", "G-Eazy"));
         info.add(new Word("Fade Away", "Logic"));

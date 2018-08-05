@@ -42,7 +42,7 @@ public class AlbumActivity extends AppCompatActivity {
         });
 
 
-        ArrayList<String> info = new ArrayList<String>();
+        ArrayList<String> info = new ArrayList<>();
         info.add("508-507-2209");
         info.add("Bobby Tartantino II");
         info.add("Closer-Single");
@@ -54,7 +54,7 @@ public class AlbumActivity extends AppCompatActivity {
 
 
         InfoAdapter adapter = new InfoAdapter(this, info);
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView listView =  findViewById(R.id.list);
         listView.setAdapter(adapter);
 
     }
