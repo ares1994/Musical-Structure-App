@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ImageButton songButton = (ImageButton) findViewById(R.id.song_button);
+        ImageButton songButton =  findViewById(R.id.song_button);
         songButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageButton albumButton = (ImageButton) findViewById(R.id.album_button);
+        ImageButton albumButton =  findViewById(R.id.album_button);
         albumButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        ImageButton artistButton = (ImageButton) findViewById(R.id.artist_button);
+        ImageButton artistButton =  findViewById(R.id.artist_button);
         artistButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

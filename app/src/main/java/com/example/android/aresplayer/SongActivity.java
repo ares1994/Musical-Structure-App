@@ -15,7 +15,7 @@ public class SongActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
-        ImageButton homeButton = (ImageButton) findViewById(R.id.home_button);
+        ImageButton homeButton =  findViewById(R.id.home_button);
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -23,7 +23,7 @@ public class SongActivity extends AppCompatActivity {
                 startActivity(homeIntent);
             }
         });
-        ImageButton albumButton = (ImageButton) findViewById(R.id.album_button);
+        ImageButton albumButton =  findViewById(R.id.album_button);
         albumButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,7 +31,7 @@ public class SongActivity extends AppCompatActivity {
                 startActivity(albumIntent);
             }
         });
-        ImageButton artistButton = (ImageButton) findViewById(R.id.artist_button);
+        ImageButton artistButton = findViewById(R.id.artist_button);
         artistButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +54,7 @@ public class SongActivity extends AppCompatActivity {
 
 
         SongAdapter adapter = new SongAdapter(this, info);
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView listView =  findViewById(R.id.list);
         listView.setAdapter(adapter);
 
 

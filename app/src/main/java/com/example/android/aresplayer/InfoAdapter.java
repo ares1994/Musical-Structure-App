@@ -24,17 +24,17 @@ public class InfoAdapter extends ArrayAdapter<String> {
     @NonNull
     public View getView(int position, View convertView, @NonNull ViewGroup parent) {
 
-        View listItemView = convertView;
-        if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
         String currentInfo = getItem(position);
 
-        TextView infoTextView = (TextView) listItemView.findViewById(R.id.info_text_view);
+        TextView infoTextView =  convertView.findViewById(R.id.info_text_view);
         infoTextView.setText(currentInfo);
 
-        return listItemView;
+        return convertView;
 
     }
 }
