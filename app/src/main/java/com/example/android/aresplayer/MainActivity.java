@@ -21,6 +21,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageButton albumButton = (ImageButton) findViewById(R.id.album_button);
+        albumButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent albumIntent = new Intent(MainActivity.this, AlbumActivity.class);
+                startActivity(albumIntent);
+            }
+        });
+
+
+        ImageButton artistButton = (ImageButton) findViewById(R.id.artist_button);
+        artistButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent artistIntent = new Intent(MainActivity.this, ArtistActivity.class);
+                startActivity(artistIntent);
+            }
+        });
+
 
     }
 

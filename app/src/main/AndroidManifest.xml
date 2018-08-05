@@ -9,18 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-            android:launchMode="singleInstance">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SongActivity"
-            android:launchMode="singleInstance"/>
-        <activity android:name=".AlbumActivity"
-            />
+        <activity
+            android:name=".SongActivity"
+            android:label="Songs"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".AlbumActivity"
+            android:label="Albums"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ArtistActivity"
+            android:label="Artists"
+            android:launchMode="singleTop" />
     </application>
 
 </manifest>

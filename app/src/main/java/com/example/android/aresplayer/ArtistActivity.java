@@ -9,7 +9,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class AlbumActivity extends AppCompatActivity {
+public class ArtistActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class AlbumActivity extends AppCompatActivity {
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent homeIntent = new Intent(AlbumActivity.this, MainActivity.class);
+                Intent homeIntent = new Intent(ArtistActivity.this, MainActivity.class);
                 startActivity(homeIntent);
             }
         });
@@ -28,29 +28,27 @@ public class AlbumActivity extends AppCompatActivity {
         songButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent songIntent = new Intent(AlbumActivity.this, SongActivity.class);
+                Intent songIntent = new Intent(ArtistActivity.this, SongActivity.class);
                 startActivity(songIntent);
             }
         });
-        ImageButton artistButton = (ImageButton) findViewById(R.id.artist_button);
-        artistButton.setOnClickListener(new View.OnClickListener() {
+        ImageButton albumButton = (ImageButton) findViewById(R.id.album_button);
+        albumButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent artistIntent = new Intent(AlbumActivity.this, ArtistActivity.class);
-                startActivity(artistIntent);
+                Intent albumIntent = new Intent(ArtistActivity.this, AlbumActivity.class);
+                startActivity(albumIntent);
             }
         });
 
-
         ArrayList<String> info = new ArrayList<String>();
-        info.add("508-507-2209");
-        info.add("Bobby Tartantino II");
-        info.add("Closer-Single");
-        info.add("Feel Good-Single");
-        info.add("History");
-        info.add("Scorpion");
-        info.add("The Incredible True Story");
-        info.add("When it's Dark Out");
+        info.add("Drake");
+        info.add("G-Eazy");
+        info.add("Joyner Lucas");
+        info.add("Logic");
+        info.add("Michael Jackson");
+        info.add("Syn Cole");
+        info.add("The Chainsmokers");
 
 
         InfoAdapter adapter = new InfoAdapter(this, info);

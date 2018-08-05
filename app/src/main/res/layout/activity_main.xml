@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/img_0056"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context="com.example.android.aresplayer.MainActivity">
 
     <RelativeLayout
@@ -21,33 +22,25 @@
 
             <ImageButton
                 android:id="@+id/home_button"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
+                style="@style/buttons"
                 android:contentDescription="@string/album_art_view"
-                android:background="@android:color/transparent"
                 android:src="@drawable/ic_home" />
 
             <ImageButton
                 android:id="@+id/song_button"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:background="@android:color/transparent"
+                style="@style/buttons"
                 android:contentDescription="@string/song_list_button"
                 android:src="@drawable/ic_music_player" />
 
             <ImageButton
                 android:id="@+id/album_button"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:background="@android:color/transparent"
+                style="@style/buttons"
                 android:contentDescription="@string/album_list_button"
                 android:src="@drawable/ic_cd" />
 
             <ImageButton
                 android:id="@+id/artist_button"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:background="@android:color/transparent"
+                style="@style/buttons"
                 android:contentDescription="@string/home_button"
                 android:src="@drawable/ic_icon" />
         </LinearLayout>
@@ -57,8 +50,8 @@
             android:layout_width="256dp"
             android:layout_height="256dp"
             android:layout_centerInParent="true"
-            android:src="@drawable/capture"
-            android:contentDescription="@string/album_art_view"/>
+            android:contentDescription="@string/album_art_view"
+            android:src="@drawable/capture" />
     </RelativeLayout>
 
     <LinearLayout
@@ -70,15 +63,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
                 android:text="@string/start_time"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
 
             <SeekBar
                 android:layout_width="300dp"
@@ -88,43 +81,36 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
                 android:text="@string/end_time"
-                android:textColor="#FFFFFF"/>
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <RelativeLayout
-
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/play_button"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
+                style="@style/buttons"
                 android:layout_centerInParent="true"
-                android:background="@android:color/transparent"
                 android:contentDescription="@string/play_button"
                 android:src="@drawable/ic_real_play_button" />
 
             <ImageButton
-                android:layout_width="64dp"
-                android:layout_height="64dp"
+                style="@style/buttons"
+                android:layout_centerVertical="true"
                 android:layout_toEndOf="@+id/play_button"
                 android:layout_toRightOf="@+id/play_button"
-                android:layout_centerVertical="true"
-                android:background="@android:color/transparent"
                 android:contentDescription="@string/fast_forward_button"
                 android:src="@drawable/ic_fast_forward" />
 
             <ImageButton
-                android:layout_width="64dp"
-                android:layout_height="64dp"
+                style="@style/buttons"
                 android:layout_centerVertical="true"
                 android:layout_toLeftOf="@id/play_button"
                 android:layout_toStartOf="@id/play_button"
-                android:background="@android:color/transparent"
                 android:contentDescription="@string/rewind_button"
                 android:src="@drawable/ic_rewind_button_arrows" />
 
